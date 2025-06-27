@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portal.css">
+    <script src="portal.js"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <img src="https://i.ibb.co/ZYmLRy5/Black-and-White-Monochrome-Tech-Logo.png" style="height:50px; width:100; border-radius:50%;" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav  ml-auto ">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#FeatureSection">Features </a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#followUsSection">Follow </a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#aboutus">About Us </a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Scholarships
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item"  onclick="display('sectionAllscholarships')">Pre-Metric</a>
+                            <a class="dropdown-item"  onclick="display('sectionAllscholarships')">Post-Metric</a>
+                            <a class="dropdown-item"  onclick="display('sectionAllscholarships')">All Scholarships</a>
+                        </div>
+
+                    </li>
+                </ul>
+                <form class="form-inline ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="text-right">
+            <button class="Student-section mb-1 mr-3"><i class="fas fa-user-graduate"></i> Student Section</button>
+            <div class="text-right">
+                <button class="btn btn-primary mr-3  mb-2" onclick="display('sectionDashboard')">Dashboard</button>
+            </div>
+        </div>
+        <div class="bg-wall p-2 ">
+            <div class="curosels_box mt-3 pl-5 pr-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/originals/d9/ab/66/d9ab66ee3e9b36c81bacb11c32d1f208.jpg" style="height:50%; width:100%;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://teachersbadi.in/wp-content/uploads/2021/04/TS-Scholarships.png" style="height:50%; width:100%;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://blog.woodbridgeoverseas.com/wp-content/uploads/2021/03/study-abroad-1.jpg" style="height:50%; width:100%;" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#17a2b8;" id="FeatureSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="s-card p-3 mb-3 mt-2 shadow">
+                            <img src="https://clipground.com/images/government-of-telangana-logo-clipart-3.jpg" class="logo-image" />
+                            <h1 class="card-heading1 mt-3">TS Scholarships</h1>
+                            <p class="card-description">
+                                Telangana scholarships provide financial support to marginalized students, including TS PMS, ePass, TMS, Pre-Matric Scholarships for Minorities, and Overseas Scholarships, promoting equal educational opportunities.
+                            </p>
+                            <div class="text-right">
+                                <button class=" btn btn-primary" onclick="display('sectionTscholaships')"> View <i class="fas fa-angle-double-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="s-card p-3 mb-3 mt-2 shadow">
+                            <img src="https://www.svgrepo.com/show/237657/gate-of-india-mumbai.svg" class="logo-image" />
+                            <h1 class="card-heading1 mt-3">National Scholarships</h1>
+                            <p class="card-description">
+                                India National Scholarships provide financial assistance to students across the country to pursue their educational goals.
+                                These scholarships cover various levels of education and help promote equal opportunities and academic excellence.
+                            </p>
+                            <div class="text-right">
+                                <button class=" btn btn-primary" onclick="display('sectionNationalScholar')"> View <i class="fas fa-angle-double-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="s-card p-3 mb-3 mt-2 shadow">
+                            <img src="https://www.nerdynaut.com/wp-content/uploads/2018/06/NN-ARTICLE-2018061001.png" class="logo-image" />
+                            <h1 class="card-heading1 mt-3">International Scholarships</h1>
+                            <p class="card-description">
+                                International scholarships promote global education by supporting students to study abroad,
+                                fostering cultural exchange, and expanding horizons through financial assistance for higher education in foreign countries.
+                            </p>
+                            <div class="text-right">
+                                <button class=" btn btn-primary" onclick="display('sectionInternationl')"> View <i class="fas fa-angle-double-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="follow-us-section pt-2 pb-2" id="followUsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutus">
+            <div class="about-us p-2">
+                <h1 class="header-about">About us:</h1>
+                <p class="about-des">Introducing ScholarWeb: Your Gateway to Scholarships
+
+                    Welcome to ScholarWeb, the premier online platform for discovering and applying to a wide range of scholarships. Our mission is to make higher education more accessible by providing comprehensive resources on various scholarship opportunities. Whether you're an undergraduate, graduate, or professional student, ScholarWeb is here to support your journey.
+
+                    We offer an extensive collection of scholarships, catering to diverse disciplines, demographics, and financial needs. Our regularly updated database ensures you have access to the latest opportunities. With ScholarWeb, finding the perfect scholarship is easy.<br />
+
+                    Our user-friendly interface allows effortless navigation through different scholarship categories, including:<br />
+                    1. Merit-Based Scholarships: Recognizing academic achievements and extracurricular involvement.<br />
+                    2. Need-Based Scholarships: Supporting students with limited financial resources.<br />
+
+                    3. Minority Scholarships: Promoting diversity and inclusivity in higher education.<br />
+                    4. International Scholarships: Opportunities for studying abroad or in foreign countries.<br />
+
+
+
+                    ScholarWeb provides detailed information on each scholarship, including eligibility, deadlines, and required documents. Additionally, we offer valuable tips to enhance your application strategy.
+
+                    Empower your educational journey with ScholarWeb. Join our community of scholarship seekers today and unlock countless opportunities.</p>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTscholaships">
+        <div class="web-bg-color">
+            <button class="back-button" onclick="display('sectionHome')"><i class="fas fa-arrow-left"></i></button>
+            <div class="card-container shadow  mr-5 ml-5 mt-5 mb-4 pt-3 pl-3 pr-3 pb-1" onclick="display('sectioneamcetDetails')" data-toggle="modal" data-target="#exampleModal">
+                <div class="head-card">
+                    <h1 class="card-heading"><i class="fas fa-bookmark mr-2"></i>TS EAMCET </h1>
+
+                </div>
+                <p class="scholar-des">TS EAMCET (Engineering, Agriculture and Medical Common Entrance Test) is a state-level entrance exam conducted in Telangana, India. It allows admission to various undergraduate professional courses offered by colleges in Telangana.</p>
+            </div>
+            <h1 class="card-heading ml-5">Pre-Matric (Free Education) :</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="click-box p-2 " onclick="display('sectionTswreisDetails')" data-toggle="modal" data-target="#exampleModal1">
+                            <div class="s-card1 p-3 mb-3  shadow">
+                                <img src="https://yt3.ggpht.com/a/AATXAJx-WA_yL67PhulAOiqnGpSQhOkcU4l4zVUXsw=s900-c-k-c0xffffffff-no-rj-mo" class="logo-image" />
+                                <h1 class="card-heading1 mt-3">TSWREIS</h1>
+                                <p class="card-description">
+                                    TSWREIS (Telangana Social Welfare Residential Educational Institutions Society) is Telangana's initiative for marginalized students, providing free education, accommodation, and holistic development through Gurukul schools.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="click-box p-2 " onclick="display('sectionTswreisDetails')" data-toggle="modal" data-target="#exampleModal1">
+                            <div class="s-card1 p-3  mb-3  shadow">
+                                <img src="https://www.employeeadda.com/wp-content/uploads/2022/07/TTWREIS-TSWREIS.png" class="logo-image" />
+                                <h1 class="card-heading1 mt-3">TTWREIS</h1>
+                                <p class="card-description">
+                                    TSWREIS (Telangana Social Welfare Residential Educational Institutions Society) is Telangana's initiative for marginalized students, providing free education, accommodation, and holistic development through Gurukul schools.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectioneamcetDetails">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl mt-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                            TS EAMCET<span class="span-head">(scholarship)</span>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="display('sectionTscholaships')">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="title-head mb-4">Students Eligible :</h1>
+                        <ul class="title-des">
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i>Candidates must obtain at least 25% of the maximum marks in the TS EAMCET exam.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> SC & ST Welfare Students whose annual Family income is Rs. Two Lakhs or below.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> BC & EBC and Minority Welfare Students who belongs to rural area their family income should be Rs. One Lakh Fifty Thousand or below.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> BC & EBC and Minority Welfare Students who are belongs to Urban area family income should be Rs. Two Lakhs or below.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Disabled Welfare Students whose parental income is Rs. One lakh or below.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> EBC students who are selected Under Corporate College Admissions Scheme Eligible for Intermediate courses.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Students whose attendance is 75% at the end of each quarter & Promoted to next academic year for Renewal Students.</li>
+
+                        </ul>
+                        <h1 class="title-head-not mb-4">Students not Eligible :</h1>
+                        <ul class="title-des">
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Students belonging to the categories other than SC, ST, BC, EBC , Minority and DW(Disabled).</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> SC,ST Students whose annual family income is more than Rs. Two Lakhs.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> BC & EBC and Minority Rural area Students Whose annual family income is more than Rs. One Lakh Fifty Thousand.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> BC & EBC and Minority Urban area Students Whose annual family income is more than Rs. Two Lakhs.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Disabled Welfare Students whose family income is more than Rupees One lakh.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> All Students who are pursuing the part time courses, online courses & Correspondence courses.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Students admitted under Sponsored seats, Management Quota seats & Spot Admissions.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Students who applied Stipend/Scholorship in any Scheme.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Students of BC, EBC and DW students studying the Courses offered by open universities, distant mode, category B seats in MBBS, BDS.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> EBC students studying Intermediate or courses.</li>
+
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="display('sectionTscholaships')">
+                            Close
+                        </button>
+                        <a class="btn btn-danger" href="https://telanganaepass.cgg.gov.in/PrematricLinks.do">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTswreisDetails">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl mt-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                            TSWREIS<span class="span-head">(Free Education Test)</span>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="display('sectionTscholaships')">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="title-head mb-4">Students Eligible :</h1>
+                        <ul class="title-des">
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i>students belonging to Scheduled Castes (SC), Scheduled Tribes (ST), and Other Backward Classes (OBC) communities in Telangana.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Reserved category students should be between 9 to 13 years and for others the age limit is between 9 to 11.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Should have studied in the same district for two consecutive years i.e class 3rd and class 4th.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> The candidates should have studied continuously in the respective district for the two academic years.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> Education must be from the Government school or in a school recognized by the Government of Telangana.</li>
+                            <li class="mb-1"><i class="fas fa-angle-right pr-2"></i> The annual income of the parents should not be more than Rs.1,50,000/- in Rural areas and Rs.2.00,000/- in Urban areas.</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="display('sectionTscholaships')">
+                            Close
+                        </button>
+                        <a class="btn btn-danger" href="https://www.tswreis.ac.in/">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionNationalScholar">
+        <div class="web-bg-color">
+            <button class="back-button" onclick="display('sectionHome')"><i class="fas fa-arrow-left"></i></button>
+            <div class="p-3">
+                <div class="card-container-ns shadow mb-4 d-flex flex-row justify-content-start">
+                    <img src="https://2.bp.blogspot.com/-bFK78T72o9w/WSKduKlw-bI/AAAAAAAAJr0/mEvsCwrShlIj7xcgu8cf9gE5PB_3-MvMwCLcB/s1600/National_Emblem_India.jpg" class="image-cards" />
+                    <div class="puri-text-card-container  d-flex flex-row justify-content-start">
+                        <div>
+                            <h1 class="heading-ns pt-2 pl-2"> National Scholarships:</h1>
+                            <p class="headings-description  pl-2">National scholarships are prestigious awards granted to outstanding students based on academic achievement, leadership qualities, and extracurricular involvement. These scholarships provide financial support and recognition, fostering future success and empowering students to pursue their educational goals and make a positive impact in society.
+                                National scholarships not only provide financial support but also inspire excellence and promote educational equity among talented students nationwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="card-heading">Scholarship Schemes:</h1>
+                <hr class="line" />
+
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h1 class="heading ">Ministry of Minority Affairs</h1>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t  show">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>Pre Matric Scholarships Scheme for Minorities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/MoMA_Pre_Matric_2018-20.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Merit Cum Means Scholarship For Professional and Technical Courses CS</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/MoMA_MCM_2018-20.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/ " style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>BEGUM HAZRAT MAHAL NATIONAL SCHOLARSHIP</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/1053_G.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Post Matric Scholarships Scheme for Minorities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/MoMA_Post_Matric_2018-20.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Department of Empowerment of Persons with Disabilities</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>Pre-matric Scholarship for Students with Disabilities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Post-matric Scholarship for Students with Disabilities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/ " style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Scholarships for Top Class Education for students with disabilities.</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Ministry of Social Justice & Empowerment</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>Top Class Education Scheme for SC Students</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/Top_Class_Education_Scheme_2018.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>PM YASASVI CENTRAL SECTOR SCHEME OF TOP CLASS EDUCATION IN SCHOOLS FOR OBC, EBC AND DNT STUDENTS</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/ " style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Ministry of Tribal Affairs</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>National Fellowship and Scholarship for Higher Education of ST Students - Scholarship (Formally Top Class Education for Schedule Tribe Students) - only for scholarships</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/tribalfellowshipguideli">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Department of School Education & Literacy</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>National Means Cum Merit Scholarship</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/NMMSSGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Department of Higher Education</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>CENTRAL SECTOR SCHEME OF SCHOLARSHIPS FOR COLLEGE AND UNIVERSITY STUDENTS</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/Guidelines_DOHE_CSSS.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id=sectionInternationl>
+        <div class="web-bg-color">
+            <button class="back-button" onclick="display('sectionHome')"><i class="fas fa-arrow-left"></i></button>
+            <div class="internation">
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="http://nosmsje.gov.in/Default.aspx">
+                            National Overseas Scholarship
+                        </a>
+                        <div class="description-n">
+                            The National Overseas Scholarship was launched by the Ministry of Social Justice and Empowerment.
+                            Through this scheme, the Government provides scholarships to the students who want to study overseas. This scholarship is helpful for those students who come from a low financial background.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of National Overseas Scholarship</h1>
+                            <ul>
+                                <li class="description-n">The candidate must be a permanent resident of India.</li>
+                                <li class="description-n">The maximum age to get eligible for this scholarship is 35 years.</li>
+                                <li class="description-n">The candidate must have at least 60% in qualifying exams.</li>
+                                <li class="description-n">The candidate’s family income must not be more than Rs 8 lakh.</li>
+                                <li class="description-n">Only two children from the same family are eligible for this scholarship.</li>
+                                <li class="description-n">The scholarship cannot be awarded more than one time.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of National Overseas Scholarship</h1>
+                            <ul>
+                                <li class="description-n">Annual maintenance allowance</li>
+                                <li class="description-n">Tuition fees</li>
+                                <li class="description-n">Medical insurance premium</li>
+                                <li class="description-n">Poll tax</li>
+                                <li class="description-n">Contingency allowance</li>
+                                <li class="description-n">Visa fees</li>
+                                <li class="description-n">Incidental journey allowance and equipment allowance</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://jntataendowment.org/loan-scholarship-process/">
+                            The JN Tata Endowment Loan Scholarship
+                        </a>
+                        <div class="description-n">
+                            The JN Tata endowment loan scholarship is dedicated to Indians who want to study overseas and pursue higher education. This scholarship supports the students at the postgraduate/doctoral/postdoctoral and research level.
+
+                            The JN Tata endowment loan scholarship has a simple interest of 2% per annum. This scholarship was initiated in 1892 and has offered financial support to over 5,350 students.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of The JN Tata Endowment Loan Scholarship</h1>
+                            <ul>
+                                <li class="description-n">The candidates must be permanent residents of India.</li>
+                                <li class="description-n">The maximum eligibility age is 45 years (30 June 2022).</li>
+                                <li class="description-n">The candidates must have completed one undergraduate degree.</li>
+                                <li class="description-n">The candidate must have at least 60% in qualifying exams.</li>
+                                <li class="description-n">The admitted candidate must be recognized as a graduate program.</li>
+
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of National Overseas Scholarship</h1>
+                            <ul>
+                                <li class="description-n">The students who are selected for The JN Tata endowment loan scholarship will get a loan scholarship up to Rs 10 Lakh. They also get travel entitled for a “Travel grant” and a “Gift award,” while the travel grants amount RS 50,000 to RS 7,50,000.</li>
+
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.usief.org.in/Fulbright-Nehru-Fellowships.">
+                            3. Fulbright-Nehru Master’s Fellowships
+                        </a>
+                        <div class="description-n">
+                            The Fulbright-Nehru Master’s Fellowships are made for Indian candidates who are talented in their studies, have good work experience, and have decent education qualifications.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Fulbright-Nehru Master’s Fellowships</h1>
+                            <ul>
+                                <li class="description-n">The candidate must have four years of bachelor’s degree or completed a master’s degree or full-time postgraduate diploma.</li>
+                                <li class="description-n">The candidate must have a minimum of 55% or higher in an undergraduate degree.</li>
+                                <li class="description-n">Must have good leadership skills and <a href="https://ishiksha.net/community-government/">community</a> service experience.</li>
+                                <li class="description-n">The minimum IELTS score must be 6.0.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Fulbright-Nehru Master’s Fellowships</h1>
+                            <ul>
+                                <li class="description-n">Scholarships provide J-1 visa support.</li>
+                                <li class="description-n">Round trip of economic class in air travel from home country to the USA.</li>
+                                <li class="description-n">Funding for tuition.</li>
+                                <li class="description-n">Coverage of accidents and sickness as per US government guidelines.</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://jntataendowment.org/loan-scholarship-process/">
+                            4. Fulbright-Nehru Master’s Doctoral Research Fellowships
+                        </a>
+                        <div class="description-n">
+                            The Fulbright-Nehru Master’s Doctoral Research Fellowships are designed for Indian students who are registered for a Ph.D. at an Indian Institute. These fellowships are for 6-9 months. Under these fellowships, Indian students are invited from large fields such as Computer science, public health, chemistry, bioengineering, and more.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Fulbright-Nehru Master’s Doctoral Research Fellowships</h1>
+                            <ul>
+                                <li class="description-n">The applicant must be registered for Ph.D. at an Indian Institute.</li>
+                                <li class="description-n">The candidate should have a high level of academic and professional achievement. The candidate should have conducted research in a relevant field.</li>
+                                <li class="description-n">Employed applicants should have the employer’s endorsement.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Fulbright-Nehru Master’s Doctoral Research Fellowships</h1>
+                            <ul>
+                                <li class="description-n">J – 1 visa support</li>
+                                <li class="description-n">A monthly stipend</li>
+                                <li class="description-n">Coverage of accidents and sickness as per US government guidelines.</li>
+                                <li class="description-n">Round trip of economic class in air travel</li>
+                                <li class="description-n">No fees and applicable allowances on dependents.</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="http://www.unesco.org/new/en/fellowships/programmes/unescopeoples-republic-of-china-the-great-wall-co-sponsored-fellowships-programme/">
+                            5. Great Wall Program
+                        </a>
+                        <div class="description-n">
+                            The great wall program is a scholarship which is established by the Chinese Government, and UNESCO is sponsoring the students and scholars in developing countries to study and conduct research in China. This program supports general and senior scholars.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Great Wall Program</h1>
+                            <ul>
+                                <li class="description-n">The applicant must not be a citizen of the People’s Republic of China.</li>
+                                <li class="description-n">The applicant must be in a good stage, physically and mentally both.</li>
+                                <li class="description-n">The candidate must have bachelor’s degree or must be completed a master’s degree</li>
+                                <li class="description-n">The maximum age of eligibility is 45 years.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Great Wall Program</h1>
+                            <ul>
+                                <li class="description-n">Tuition fees</li>
+                                <li class="description-n">Medical insurance premium</li>
+                                <li class="description-n">Stipend</li>
+                                <li class="description-n">Accommodation</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.britishcouncil.in/study-uk/scholarships/great-scholarships">
+                            6. Great Scholarships India
+                        </a>
+                        <div class="description-n">
+                            Great Scholarships India supports and encourages students who want to pursue higher studies in the UK.
+                            This scholarship allows one to complete postgraduate study in any participating UK universities. This scholarship is offered widely by 20 UK universities.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Great Scholarships India</h1>
+                            <ul>
+                                <li class="description-n">The applicant should be a great scholarship alumnus. The candidate should be a citizen and present resident of India, China, Indonesia, Turkey, Malaysia, or Thailand.</li>
+                                <li class="description-n">Must have completed a UG degree in his/her hometown.</li>
+                                <li class="description-n">Should be applying to one of the participating UK universities.</li>
+
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Great Scholarships India</h1>
+                            <ul>
+                                <li class="description-n">Maximum funding up to USD 10,000.</li>
+                                <li class="description-n">Tuition fees</li>
+                                <li class="description-n">One-way travel.</li>
+                                <li class="description-n">Health allowance</li>
+                                <li class="description-n">Adequate living expenses</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.usief.org.in/Fellowships/Fulbright-Kalam-Climate-Fellowship.aspx">
+                            7. Fulbright-Kalam Climate Fellowship
+                        </a>
+                        <div class="description-n">
+                            UNICEF sponsors Fulbright-Kalam Climate Fellowship to address climate change-related issues by encouraging scientific and technical researchers scholars from India and the USA. The fellowships are offered to doctoral, academic, and professional research. 20 UK universities.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Fulbright-Kalam Climate Fellowship</h1>
+                            <ul>
+                                <li class="description-n">Applicants must be registered for their Ph.D. and have conducted adequate research in the relevant field.</li>
+                                <li class="description-n">Employed applicants must follow the instructions regarding the employer’s endorsement.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Fulbright-Kalam Climate Fellowship</h1>
+                            <ul>
+                                <li class="description-n">J – 1 visa support</li>
+                                <li class="description-n">A monthly stipend</li>
+                                <li class="description-n">Coverage of accidents and sickness as per US government guidelines.</li>
+                                <li class="description-n">Setting-in and professionally allowance</li>
+                                <li class="description-n">Great opportunity for non-audit courses and gaining work experience.</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.inlaksfoundation.org/scholarships/">
+                            8. The Inlaks Shivdasani Scholarships
+                        </a>
+                        <div class="description-n">
+                            The Inlaks Shivdasani scholarships are very helpful to the students who want to take education from well-recognized universities in the US. Since 1976, these scholarships have helped Indian students to take higher educations.
+
+                            These scholarships award up to USD 100,000 to cover scholar’s expenses and tuition fees.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of The Inlaks Shivdasani Scholarships</h1>
+                            <ul>
+                                <li class="description-n">These scholarships are open to Indian students who have been residents in India from the past 6 months.</li>
+                                <li class="description-n">For mathematics, science environment, and their related subjects, minimum academic grade of 70% from a recognized university.</li>
+                                <li class="description-n">For Social science, humanities, law, fine arts, architecture, and their related subjects, a minimum academic grade of 65% from a recognized university.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of The Inlaks Shivdasani Scholarships</h1>
+                            <ul>
+                                <li class="description-n">It covers the total tuition fees</li>
+                                <li class="description-n">Health allowance</li>
+                                <li class="description-n">One-way Travel allowance</li>
+                                <li class="description-n">Adequate living expenses</li>
+
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionAllscholarships">
+        <div class="web-bg-color">
+            <button class="back-button" onclick="display('sectionHome')"><i class="fas fa-arrow-left"></i></button>
+            <h1 class="card-heading mb-0 pl-5 mt-4">All types of Scholarshiips:</h1>
+            <div class="card-container shadow  mr-5 ml-5 mt-5 mb-4 pt-3 pl-3 pr-3 pb-1" onclick="display('sectioneamcetDetails')" data-toggle="modal" data-target="#exampleModal">
+                <div class="head-card">
+                    <h1 class="card-heading"><i class="fas fa-bookmark mr-2"></i>TS EAMCET </h1>
+
+                </div>
+                <p class="scholar-des">TS EAMCET (Engineering, Agriculture and Medical Common Entrance Test) is a state-level entrance exam conducted in Telangana, India. It allows admission to various undergraduate professional courses offered by colleges in Telangana.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="click-box p-2 " onclick="display('sectionTswreisDetails')" data-toggle="modal" data-target="#exampleModal1">
+                            <div class="s-card1 p-3 mb-3  shadow">
+                                <img src="https://yt3.ggpht.com/a/AATXAJx-WA_yL67PhulAOiqnGpSQhOkcU4l4zVUXsw=s900-c-k-c0xffffffff-no-rj-mo" class="logo-image" />
+                                <h1 class="card-heading1 mt-3">TSWREIS</h1>
+                                <p class="card-description">
+                                    TSWREIS (Telangana Social Welfare Residential Educational Institutions Society) is Telangana's initiative for marginalized students, providing free education, accommodation, and holistic development through Gurukul schools.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="click-box p-2 " onclick="display('sectionTswreisDetails')" data-toggle="modal" data-target="#exampleModal1">
+                            <div class="s-card1 p-3  mb-3  shadow">
+                                <img src="https://www.employeeadda.com/wp-content/uploads/2022/07/TTWREIS-TSWREIS.png" class="logo-image" />
+                                <h1 class="card-heading1 mt-3">TTWREIS</h1>
+                                <p class="card-description">
+                                    TSWREIS (Telangana Social Welfare Residential Educational Institutions Society) is Telangana's initiative for marginalized students, providing free education, accommodation, and holistic development through Gurukul schools.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="internation">
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="http://nosmsje.gov.in/Default.aspx">
+                            National Overseas Scholarship
+                        </a>
+                        <div class="description-n">
+                            The National Overseas Scholarship was launched by the Ministry of Social Justice and Empowerment.
+                            Through this scheme, the Government provides scholarships to the students who want to study overseas. This scholarship is helpful for those students who come from a low financial background.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of National Overseas Scholarship</h1>
+                            <ul>
+                                <li class="description-n">The candidate must be a permanent resident of India.</li>
+                                <li class="description-n">The maximum age to get eligible for this scholarship is 35 years.</li>
+                                <li class="description-n">The candidate must have at least 60% in qualifying exams.</li>
+                                <li class="description-n">The candidate’s family income must not be more than Rs 8 lakh.</li>
+                                <li class="description-n">Only two children from the same family are eligible for this scholarship.</li>
+                                <li class="description-n">The scholarship cannot be awarded more than one time.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of National Overseas Scholarship</h1>
+                            <ul>
+                                <li class="description-n">Annual maintenance allowance</li>
+                                <li class="description-n">Tuition fees</li>
+                                <li class="description-n">Medical insurance premium</li>
+                                <li class="description-n">Poll tax</li>
+                                <li class="description-n">Contingency allowance</li>
+                                <li class="description-n">Visa fees</li>
+                                <li class="description-n">Incidental journey allowance and equipment allowance</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://jntataendowment.org/loan-scholarship-process/">
+                            The JN Tata Endowment Loan Scholarship
+                        </a>
+                        <div class="description-n">
+                            The JN Tata endowment loan scholarship is dedicated to Indians who want to study overseas and pursue higher education. This scholarship supports the students at the postgraduate/doctoral/postdoctoral and research level.
+
+                            The JN Tata endowment loan scholarship has a simple interest of 2% per annum. This scholarship was initiated in 1892 and has offered financial support to over 5,350 students.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of The JN Tata Endowment Loan Scholarship</h1>
+                            <ul>
+                                <li class="description-n">The candidates must be permanent residents of India.</li>
+                                <li class="description-n">The maximum eligibility age is 45 years (30 June 2022).</li>
+                                <li class="description-n">The candidates must have completed one undergraduate degree.</li>
+                                <li class="description-n">The candidate must have at least 60% in qualifying exams.</li>
+                                <li class="description-n">The admitted candidate must be recognized as a graduate program.</li>
+
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of National Overseas Scholarship</h1>
+                            <ul>
+                                <li class="description-n">The students who are selected for The JN Tata endowment loan scholarship will get a loan scholarship up to Rs 10 Lakh. They also get travel entitled for a “Travel grant” and a “Gift award,” while the travel grants amount RS 50,000 to RS 7,50,000.</li>
+
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.usief.org.in/Fulbright-Nehru-Fellowships.">
+                            3. Fulbright-Nehru Master’s Fellowships
+                        </a>
+                        <div class="description-n">
+                            The Fulbright-Nehru Master’s Fellowships are made for Indian candidates who are talented in their studies, have good work experience, and have decent education qualifications.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Fulbright-Nehru Master’s Fellowships</h1>
+                            <ul>
+                                <li class="description-n">The candidate must have four years of bachelor’s degree or completed a master’s degree or full-time postgraduate diploma.</li>
+                                <li class="description-n">The candidate must have a minimum of 55% or higher in an undergraduate degree.</li>
+                                <li class="description-n">Must have good leadership skills and <a href="https://ishiksha.net/community-government/">community</a> service experience.</li>
+                                <li class="description-n">The minimum IELTS score must be 6.0.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Fulbright-Nehru Master’s Fellowships</h1>
+                            <ul>
+                                <li class="description-n">Scholarships provide J-1 visa support.</li>
+                                <li class="description-n">Round trip of economic class in air travel from home country to the USA.</li>
+                                <li class="description-n">Funding for tuition.</li>
+                                <li class="description-n">Coverage of accidents and sickness as per US government guidelines.</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://jntataendowment.org/loan-scholarship-process/">
+                            4. Fulbright-Nehru Master’s Doctoral Research Fellowships
+                        </a>
+                        <div class="description-n">
+                            The Fulbright-Nehru Master’s Doctoral Research Fellowships are designed for Indian students who are registered for a Ph.D. at an Indian Institute. These fellowships are for 6-9 months. Under these fellowships, Indian students are invited from large fields such as Computer science, public health, chemistry, bioengineering, and more.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Fulbright-Nehru Master’s Doctoral Research Fellowships</h1>
+                            <ul>
+                                <li class="description-n">The applicant must be registered for Ph.D. at an Indian Institute.</li>
+                                <li class="description-n">The candidate should have a high level of academic and professional achievement. The candidate should have conducted research in a relevant field.</li>
+                                <li class="description-n">Employed applicants should have the employer’s endorsement.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Fulbright-Nehru Master’s Doctoral Research Fellowships</h1>
+                            <ul>
+                                <li class="description-n">J – 1 visa support</li>
+                                <li class="description-n">A monthly stipend</li>
+                                <li class="description-n">Coverage of accidents and sickness as per US government guidelines.</li>
+                                <li class="description-n">Round trip of economic class in air travel</li>
+                                <li class="description-n">No fees and applicable allowances on dependents.</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="http://www.unesco.org/new/en/fellowships/programmes/unescopeoples-republic-of-china-the-great-wall-co-sponsored-fellowships-programme/">
+                            5. Great Wall Program
+                        </a>
+                        <div class="description-n">
+                            The great wall program is a scholarship which is established by the Chinese Government, and UNESCO is sponsoring the students and scholars in developing countries to study and conduct research in China. This program supports general and senior scholars.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Great Wall Program</h1>
+                            <ul>
+                                <li class="description-n">The applicant must not be a citizen of the People’s Republic of China.</li>
+                                <li class="description-n">The applicant must be in a good stage, physically and mentally both.</li>
+                                <li class="description-n">The candidate must have bachelor’s degree or must be completed a master’s degree</li>
+                                <li class="description-n">The maximum age of eligibility is 45 years.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Great Wall Program</h1>
+                            <ul>
+                                <li class="description-n">Tuition fees</li>
+                                <li class="description-n">Medical insurance premium</li>
+                                <li class="description-n">Stipend</li>
+                                <li class="description-n">Accommodation</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.britishcouncil.in/study-uk/scholarships/great-scholarships">
+                            6. Great Scholarships India
+                        </a>
+                        <div class="description-n">
+                            Great Scholarships India supports and encourages students who want to pursue higher studies in the UK.
+                            This scholarship allows one to complete postgraduate study in any participating UK universities. This scholarship is offered widely by 20 UK universities.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Great Scholarships India</h1>
+                            <ul>
+                                <li class="description-n">The applicant should be a great scholarship alumnus. The candidate should be a citizen and present resident of India, China, Indonesia, Turkey, Malaysia, or Thailand.</li>
+                                <li class="description-n">Must have completed a UG degree in his/her hometown.</li>
+                                <li class="description-n">Should be applying to one of the participating UK universities.</li>
+
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Great Scholarships India</h1>
+                            <ul>
+                                <li class="description-n">Maximum funding up to USD 10,000.</li>
+                                <li class="description-n">Tuition fees</li>
+                                <li class="description-n">One-way travel.</li>
+                                <li class="description-n">Health allowance</li>
+                                <li class="description-n">Adequate living expenses</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.usief.org.in/Fellowships/Fulbright-Kalam-Climate-Fellowship.aspx">
+                            7. Fulbright-Kalam Climate Fellowship
+                        </a>
+                        <div class="description-n">
+                            UNICEF sponsors Fulbright-Kalam Climate Fellowship to address climate change-related issues by encouraging scientific and technical researchers scholars from India and the USA. The fellowships are offered to doctoral, academic, and professional research. 20 UK universities.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of Fulbright-Kalam Climate Fellowship</h1>
+                            <ul>
+                                <li class="description-n">Applicants must be registered for their Ph.D. and have conducted adequate research in the relevant field.</li>
+                                <li class="description-n">Employed applicants must follow the instructions regarding the employer’s endorsement.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of Fulbright-Kalam Climate Fellowship</h1>
+                            <ul>
+                                <li class="description-n">J – 1 visa support</li>
+                                <li class="description-n">A monthly stipend</li>
+                                <li class="description-n">Coverage of accidents and sickness as per US government guidelines.</li>
+                                <li class="description-n">Setting-in and professionally allowance</li>
+                                <li class="description-n">Great opportunity for non-audit courses and gaining work experience.</li>
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="content">
+                        <a class="header" href="https://www.inlaksfoundation.org/scholarships/">
+                            8. The Inlaks Shivdasani Scholarships
+                        </a>
+                        <div class="description-n">
+                            The Inlaks Shivdasani scholarships are very helpful to the students who want to take education from well-recognized universities in the US. Since 1976, these scholarships have helped Indian students to take higher educations.
+
+                            These scholarships award up to USD 100,000 to cover scholar’s expenses and tuition fees.
+                        </div>
+                        <div class="expanded-content" style="display: none;">
+                            <h1 class="n-header">Eligibility Criteria of The Inlaks Shivdasani Scholarships</h1>
+                            <ul>
+                                <li class="description-n">These scholarships are open to Indian students who have been residents in India from the past 6 months.</li>
+                                <li class="description-n">For mathematics, science environment, and their related subjects, minimum academic grade of 70% from a recognized university.</li>
+                                <li class="description-n">For Social science, humanities, law, fine arts, architecture, and their related subjects, a minimum academic grade of 65% from a recognized university.</li>
+                            </ul>
+                            <h1 class="n-header">Types of Assistance in Value of The Inlaks Shivdasani Scholarships</h1>
+                            <ul>
+                                <li class="description-n">It covers the total tuition fees</li>
+                                <li class="description-n">Health allowance</li>
+                                <li class="description-n">One-way Travel allowance</li>
+                                <li class="description-n">Adequate living expenses</li>
+
+                            </ul>
+                        </div>
+                        <div class="expand" onclick="expandContainer(this)">
+                            View More <span class="expand-icon">&#9660;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 mt-0">
+                <h1 class="card-heading">Scholarship Schemes:</h1>
+                <hr class="line" />
+
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h1 class="heading ">Ministry of Minority Affairs</h1>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t  show">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>Pre Matric Scholarships Scheme for Minorities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/MoMA_Pre_Matric_2018-20.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Merit Cum Means Scholarship For Professional and Technical Courses CS</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/MoMA_MCM_2018-20.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/ " style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>BEGUM HAZRAT MAHAL NATIONAL SCHOLARSHIP</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/1053_G.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Post Matric Scholarships Scheme for Minorities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/MoMA_Post_Matric_2018-20.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Department of Empowerment of Persons with Disabilities</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>Pre-matric Scholarship for Students with Disabilities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Post-matric Scholarship for Students with Disabilities</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/ " style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Scholarships for Top Class Education for students with disabilities.</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Ministry of Social Justice & Empowerment</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>Top Class Education Scheme for SC Students</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/Top_Class_Education_Scheme_2018.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+                                <tr>
+                                    <td>PM YASASVI CENTRAL SECTOR SCHEME OF TOP CLASS EDUCATION IN SCHOOLS FOR OBC, EBC AND DNT STUDENTS</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/ " style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Ministry of Tribal Affairs</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>National Fellowship and Scholarship for Higher Education of ST Students - Scholarship (Formally Top Class Education for Schedule Tribe Students) - only for scholarships</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/tribalfellowshipguideli">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Department of School Education & Literacy</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>National Means Cum Merit Scholarship</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/NMMSSGuidelines.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle" onclick="toggleContainer(this)">
+                    <h4 class="heading">Department of Higher Education</h4>
+                    <div class="toggle-symbol">+</div>
+                    <div class="content-t">
+                        <div class="mt-3">
+                            <table>
+                                <tr>
+                                    <th>Scheme Name</th>
+                                    <th>Criteria</th>
+                                    <th>Visit site</th>
+                                </tr>
+                                <tr>
+                                    <td>CENTRAL SECTOR SCHEME OF SCHOLARSHIPS FOR COLLEGE AND UNIVERSITY STUDENTS</td>
+                                    <td><a href="https://scholarships.gov.in/public/schemeGuidelines/Guidelines_DOHE_CSSS.pdf">Guidelines</a></td>
+                                    <td><a href="https://scholarships.gov.in/" style="color:#e2105b;">Apply</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionDashboard">
+        <div class="hero">
+            <nav class="star">
+              
+                <ul class="d-ul">
+                    <li class="d-li"><a class="a" href="#">Home</a></li>
+                    <li class="d-li"><a class="a" href="#">About</a></li>
+                    <li class="d-li"><a class="a" href="#">Contact</a></li>
+                </ul>
+                <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png" class="user-pic" onclick="toggleMenu()" />
+    
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png" />
+                            <h3>Srikanth</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="" />
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="" />
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="" />
+                            <p>help</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="" />
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="card-container shadow  mr-5 ml-5 mt-5 mb-4 pt-3 pl-3 pr-3 pb-1" onclick="display('sectioneamcetDetails')" data-toggle="modal" data-target="#exampleModal">
+                <div class="head-card">
+                    <h1 class="card-heading"><i class="fas fa-bookmark mr-2"></i>TS EAMCET </h1>
+
+                </div>
+                <p class="scholar-des">TS EAMCET (Engineering, Agriculture and Medical Common Entrance Test) is a state-level entrance exam conducted in Telangana, India. It allows admission to various undergraduate professional courses offered by colleges in Telangana.</p>
+            </div>
+            <div class="card-container shadow  mr-5 ml-5 mt-5 mb-4 pt-3 pl-3 pr-3 pb-1" onclick="display('sectioneamcetDetails')" data-toggle="modal" data-target="#exampleModal">
+                <div class="head-card">
+                    <h1 class="card-heading"><i class="fas fa-bookmark mr-2"></i>TSWREIS</h1>
+
+                </div>
+                <p class="scholar-des">TSWREIS (Telangana Social Welfare Residential Educational Institutions Society) is Telangana's initiative for marginalized students, providing free education, accommodation, and holistic development through Gurukul schools.</p>
+            </div>
+            <div class="card-container shadow  mr-5 ml-5 mt-5 mb-4 pt-3 pl-3 pr-3 pb-1"  >
+                <div class="head-card">
+                    <a class="header" href="http://nosmsje.gov.in/Default.aspx">
+                        National Overseas Scholarship
+                    </a>
+
+                </div>
+                <p class="scholar-des"> The National Overseas Scholarship was launched by the Ministry of Social Justice and Empowerment.
+                    Through this scheme, the Government provides scholarships to the students who want to study overseas. This scholarship is helpful for those students who come from a low financial background.</p>
+            </div>
+            
+    </div>
+        
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
